@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="keywords" content="李安华的个人网站"/><!--设置网页关键字 -->
+	<meta name="description" content="个人网站"/><!--设置网页描述-->
+	<meta name="author" content="李安华"/><!--设置网页作者 -->
+	<title>LEE-个人中心</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/main.css">
+  <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+  <script type="text/jscript" src="../public/js/jquery-3.2.1.min.js"></script>
+  <script type="text/jscript" src="../public/js/main.js"></script>
+  <link rel="shortcut icon" href="../public/images/logo.ico" type="image/x-icon">
+
+  <!--一键回顶部-->
+  <script src="public/js/jquery-1.10.2.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#go_top").hide();
+      $(function () {
+        //检测屏幕高度
+        var height=$(window).height();
+        //scroll() 方法为滚动事件
+        $(window).scroll(function(){
+          if ($(window).scrollTop()>height){
+            $("#go_top").fadeIn(500);
+          }else{
+            $("#go_top").fadeOut(500);
+            }
+        });
+        $("#go_top").click(function(){
+          $('body,html').animate({scrollTop:0},100);
+          return false;
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="navTop">
+  <div class="navTopLeft">
+    <span>mr.lee个人博客</span>
+  </div>
+  <div class="navTopRight">
+    <span><a href="">[设置首页]</a></span>
+    <span><a href="">[加入收藏]</a></span>
+    <span><a href="">[个人主页]</a></span>
+    <span><a href="../login.html">[登录]</a></span>
+  </div>
+</div>
+<header>
+  <nav class="topnav" id="topnav">
+  <div class="topNavInput">
+    <input type="text" class='topNavSearch' maxlength='15' placeholder="请输入关键字">
+    <input type="image" src='../public/images/sub.gif' class='topNavSub' align='top'>
+  </div>
+    <a href="../index.html">
+      <span>首页</span>
+      <span class="en">Honme</span>
+    </a>
+    <a href="../about.html">
+      <span>关于我</span>
+      <span class="en">About</span>
+    </a>
+    <a href="../riji.html">
+      <span>我的日记</span>
+      <span class="en">Diary</span>
+    </a>
+    <a href="../shuo.html">
+      <span>我的内心话</span>
+      <span class="en">Seo</span>
+    </a>
+    <a href="../words.html">
+      <span>留言版</span>
+      <span class="en">Gustbook</span>
+    </a>
+  </nav>
+</header>
+
+	<!--中间内容 start-->
+  <div id="content">
+    <div class="clear"></div>
+    <div class="homaMain">
+      <div class="homeTop">
+          <div class="homeTopLeft">
+            <img src="../static/my_1.jpg" alt="">
+          </div>
+          <div class="homeTopRight">
+            <a href="fatie.html" class="homeTopRight1">发帖</a><br/>
+            <br/>
+            <a href="" class="homeTopRight2">编辑</a>
+          </div>
+      </div>
+      <div class="homeTopButton">
+        <img src="../public/images/home_wei.png" alt="">
+        <a>威望：100</a>
+        <img src="../public/images/home_jifen.png" alt="">
+        <a>积分：150</a>
+        <img src="../public/images/home_dianzan.png" alt="">
+        <a>点赞：200</a>
+      </div>
+      <div class="homeContent">
+        <div class="contentTitle">
+          <p>已发文章</p>
+        </div>
+        <div class="content_text">
+          <!--文章开始-->
+          <div class="wz">
+              <h3>
+                <a href="../article/1.html" title="">从0开始学PHP有多容易？</a>
+              </h3>
+              <div class="content_textLeft">
+                <a href="" class="homeTopRight1">修改</a>
+                <a href="" class="homeTopRight2">删除</a> 
+              </div>
+              <dl>
+                <dd>
+                  <p class="dd_text_2">
+                    <span class="left author">MR,lee</span>
+                    <span class="left sj">时间:2019-11-25</span>
+                    <span class="left fl">分类:
+                      <a title="学无止境">学无止境</a>
+                    </span>
+                    <div class="clear"></div>
+                  </p>
+                </dd>
+              <div class="clear"></div>
+            </dl>
+          </div>
+          <!--文章分隔符-->
+          <div class="line"></div>
+          <!--文章结束--> 
+          <!--文章开始-->
+          <div class="wz">
+              <h3>
+                <a href="../article/1.html" title="">从0开始学PHP有多容易？</a>
+              </h3>
+              <div class="content_textLeft">
+                <a href="" class="homeTopRight1">修改</a>
+                <a href="" class="homeTopRight2">删除</a> 
+              </div>
+              <dl>
+                <dd>
+                  <p class="dd_text_2">
+                    <span class="left author">Mr.lee</span>
+                    <span class="left sj">时间:2019-11-25</span>
+                    <span class="left fl">分类:
+                      <a title="学无止境">学无止境</a>
+                    </span>
+                    <div class="clear"></div>
+                  </p>
+                </dd>
+              <div class="clear"></div>
+            </dl>
+          </div>
+          <!--文章分隔符-->
+          <div class="line"></div>
+          <!--文章结束--> 
+          <!--文章开始-->
+          <div class="wz">
+              <h3>
+                <a href="../article/1.html" title="">从0开始学PHP有多容易？</a>
+              </h3>
+              <div class="content_textLeft">
+                <a href="" class="homeTopRight1">修改</a>
+                <a href="" class="homeTopRight2">删除</a> 
+              </div>
+              <dl>
+                <dd>
+                  <p class="dd_text_2">
+                    <span class="left author">mrlee</span>
+                    <span class="left sj">时间:2019-11-25</span>
+                    <span class="left fl">分类:
+                      <a title="学无止境">学无止境</a>
+                    </span>
+                    <div class="clear"></div>
+                  </p>
+                </dd>
+              <div class="clear"></div>
+            </dl>
+          </div>
+          <!--文章分隔符-->
+          <div class="line"></div>
+          <!--文章结束--> 
+          <!--文章开始-->
+          <div class="wz">
+              <h3>
+                <a href="../article/1.html" title="">从0开始学PHP有多容易？</a>
+              </h3>
+              <div class="content_textLeft">
+                <a href="" class="homeTopRight1">修改</a>
+                <a href="" class="homeTopRight2">删除</a> 
+              </div>
+              <dl>
+                <dd>
+                  <p class="dd_text_2">
+                    <span class="left author">mrlee</span>
+                    <span class="left sj">时间:2019-11-25</span>
+                    <span class="left fl">分类:
+                      <a title="学无止境">学无止境</a>
+                    </span>
+                    <div class="clear"></div>
+                  </p>
+                </dd>
+              <div class="clear"></div>
+            </dl>
+          </div>
+          <!--文章分隔符-->
+          <div class="line"></div>
+          <!--文章结束--> 
+        </div>
+      </div> 
+    </div>
+  <div class="clear"></div>
+  </div>
+  <!--content end-->
+    <!--footer start-->
+    <div id="footer">
+      <p>
+        <a href="">关于我们&nbsp;|</a>
+        <a href="">mr.lee编程</a>
+      </p>
+      <p>© 2019 个人博客  版权所有</p>
+    <div id="footerImg">
+      <img src="../public/images/yongxin.jpg" alt="我们一直在用心做">
+    </div>
+    </div>
+    <!--footer end-->
+
+      <!--一键会顶部-->
+  <div id="go_top">
+    <img src="../public/images/move-top.png" alt="回到顶部图片">
+  </div>
+</body>
+</html>

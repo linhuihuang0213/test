@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="keywords" content="李安华的个人网站"/><!--设置网页关键字 -->
+	<meta name="description" content="个人网站"/><!--设置网页描述-->
+	<meta name="author" content="李安华"/><!--设置网页作者 -->
+	<title>lee-发帖</title>
+	<link rel="stylesheet" type="text/css" href="../public/css/main.css">
+  <script type="text/jscript" src="../public/js/jquery-3.2.1.min.js"></script>
+  <script type="text/jscript" src="../public/js/main.js"></script>
+  <link rel="shortcut icon" href="../public/images/logo.ico" type="image/x-icon">
+
+  <!--一键回顶部-->
+  <script src="public/js/jquery-1.10.2.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#go_top").hide();
+      $(function () {
+        //检测屏幕高度
+        var height=$(window).height();
+        //scroll() 方法为滚动事件
+        $(window).scroll(function(){
+          if ($(window).scrollTop()>height){
+            $("#go_top").fadeIn(500);
+          }else{
+            $("#go_top").fadeOut(500);
+            }
+        });
+        $("#go_top").click(function(){
+          $('body,html').animate({scrollTop:0},100);
+          return false;
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+<div class="navTop">
+  <div class="navTopLeft">
+    <span>mr.lee个人博客</span>
+  </div>
+  <div class="navTopRight">
+    <span><a href="">[设置首页]</a></span>
+    <span><a href="">[加入收藏]</a></span>
+    <span><a href="">[个人主页]</a></span>
+    <span><a href="../login.html">[登录]</a></span>
+  </div>
+</div>
+<header>
+  <nav class="topnav" id="topnav">
+  <div class="topNavInput">
+    <input type="text" class='topNavSearch' maxlength='15' placeholder="请输入关键字">
+    <input type="image" src='../public/images/sub.gif' class='topNavSub' align='top'>
+  </div>
+    <a href="../index.html">
+      <span>首页</span>
+      <span class="en">Honme</span>
+    </a>
+    <a href="../about.html">
+      <span>关于我</span>
+      <span class="en">About</span>
+    </a>
+    <a href="../riji.html">
+      <span>我的日记</span>
+      <span class="en">Diary</span>
+    </a>
+    <a href="../shuo.html">
+      <span>我的内心话</span>
+      <span class="en">Seo</span>
+    </a>
+    <a href="../words.html">
+      <span>留言版</span>
+      <span class="en">Gustbook</span>
+    </a>
+  </nav>
+</header>
+	<!--中间内容 start-->
+  <div id="content">
+      <!--left开始-->
+    <div class="left" id="c_left">
+      <div class="s_tuijian">
+        <h2>发表<span>主题</span></h2>
+			</div>
+      <div class="conFaTie">
+        <div class="conFaTieLei">
+          <select id="inputOp" name="book" class="conFaTieLei1" >
+            <option>PHP学习</option>
+            <option>UML建模</option>
+            <option>随心说说</option>
+            <option>今日感想</option>
+            <option>未来打算</option>
+          </select>
+        </div>
+        <div class="conFaTieTitle">
+          <input type="text" name="wzTitle" placeholder="标题……">
+        </div>
+        <div class="conFaTieTxt">
+            <img src="../static/shuru.png" alt="">
+              <textarea name="wzTxt" id="" cols="30" rows="10" placeholder="输入您要发帖的内容,一条帖子威望+5……"></textarea>   
+        </div>
+        <div class="conFaTieBut">
+          <input type="submit" value="确认发帖">
+        </div>
+      </div>
+    <!--所有文章结束-->
+	</div>
+  <!--left end-->
+  <!--right-->
+  <div class="right" id="c_right">
+    <!--第一个栏目分类开始-->
+    <div class="lanmubox">
+      <div class="hd">
+        <ul><li>发帖指南</li></ul>
+      </div>
+    <div class="bd">
+      <ul>
+				<li>
+          <a href="#" title="">不能相同内容</a>
+        </li>
+				<li>
+          <a href="#" title="">不能发布敏感的时政言论</a>
+        </li>
+				<li>
+          <a href="#" title="">不能发布黄赌毒内容</a>
+        </li>
+				<li>
+          <a href="#" title="">违反一次将会警告，三次将被封号</a>
+        </li>
+				<li>
+          <a href="#" title="">蟹蟹合作</a>
+        </li>
+			</ul>   
+    </div>
+    </div>
+    <!--第一个栏目分类结束-->
+  </div>
+  <!--right end-->
+  <div class="clear"></div>
+  </div>
+  <!--content end-->
+  <!--footer start-->
+    <div id="footer">
+      <p>
+        <a href="">关于我们&nbsp;|</a>
+        <a href="">LEE编程</a>
+      </p>
+      <p>© 2019 PHP个人博客  版权所有</p>
+    <div id="footerImg">
+      <img src="../public/images/yongxin.jpg" alt="我们一直在用心做">
+    </div>
+    </div>
+    <!--footer end-->
+
+  <!--一键会顶部-->
+  <div id="go_top">
+    <img src="../public/images/move-top.png" alt="回到顶部图片">
+  </div>
+</body>
+</html>

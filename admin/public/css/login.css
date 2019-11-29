@@ -1,0 +1,50 @@
+.main{
+	background: #1E9FFF;
+}
+.loginFrm{
+	position:absolute;
+	left:54%;
+	top:50%;
+	width:400px;
+	margin-left:-250px;
+	margin-top:-200px;
+}
+.loginBiao{
+	background:#ffffff;
+	padding:20px;
+	border-radius:4px;
+	box-shadow:5px 5px 20px #444444;
+}
+.loginHeader{
+	color:gray;
+	border-bottom: 1px solid #FFEFDB;
+}
+.loginInput{
+	padding-top: 20px;
+}
+.loginInput1{
+	margin-left: 30px;
+	height: 40px;
+	width: 80%;
+	border:1px solid #3BC372;
+}
+.loginInput1:hover{
+	border:1px solid #CD0000;
+}
+.loginBtu{
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.loginBtu1{
+	height: 40px;
+	width: 88%;
+	background: #33ABA0;
+	color: #fff;
+	line-height: 30px;
+	font-size: 15px;
+	border:none;
+	cursor: pointer;
+}
+.loginBtu1:hover{
+	background:#7EC0EE;
+}

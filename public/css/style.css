@@ -1,0 +1,333 @@
+/* CSS Document */
+@charset "utf-8";
+*{
+	margin:0px; 
+	padding:0px;
+}
+body{
+	font-size:14px;
+	font-family:"微软雅黑";
+	background:#E3E3E5 url(../images/bg.jpg)  50% top scroll no-repeat;
+	color:#5d5d5d;
+}
+a{
+	text-decoration:none;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+li{
+	list-style:none;
+}
+img{
+	display:block;
+	border:0px;
+}
+/*end*/
+/*当前位置*/
+.weizi{
+	width:1000px;
+	height:30px;
+	line-height:30px; 
+	background:url("../images/weizi.png") 7px 5px no-repeat; 
+	background-color:#fff;
+	border-bottom:1px solid #ccc;
+}
+.weizi .wz_text{
+	font-size:16px;
+	color:#444;
+	padding-left:25px;}
+.weizi .wz_text h1{
+	font-size:16px;
+	color:#F00E71;
+	display:inline;
+	font-weight:500;
+}
+.weizi .wz_text a{
+	color:#444;
+}
+.weizi .wz_text a:hover{
+	text-decoration:underline;
+	color:#f00;
+}
+/*当前位置*/
+
+/*随心说*/
+#say{
+	width:1000px;
+	margin:5px auto;
+}
+#say .weizi{
+	width:1000px;
+	height:28px;
+	line-height:28px;
+	background:url("../images/weizi.png") 7px 5px no-repeat; 
+	background-color:#fff;
+	border-radius:3px;
+}
+.weizi .wz_text{	/*当前位置*/
+	font-size:16px;
+	color:#444;
+	padding-left:25px;
+}
+.weizi .wz_text h1{
+	font-size:16px;
+	color:#F00E71;
+	display:inline;
+	font-weight:500;
+}
+.weizi .wz_text a{
+	color:#444;
+}
+.weizi .wz_text a:hover{
+	text-decoration:underline;
+	color:#79CDC7;
+}
+.say_box {	/*文本框*/
+	background:#f8f8f8;
+	width:800px; 
+	border-radius:5px;
+	position:relative; 
+	padding: 20px 0;
+	margin:10px 0;
+	font-size:14px;
+	font-family:"宋体"; 
+}
+.say_box p {	/*文本框中的文字*/
+	line-height:24px;
+	padding:0 20px 20px ;
+}
+
+.say_box:hover {
+	background: #f4f2f2;
+	color:#79CDC7;
+	text-shadow: #f7f7f7 1px 1px 1px; 
+}
+.dateview {
+	position:absolute;
+	left:840px;
+	top:15px;
+	width:125px;
+	line-height:35px;
+	background:#5EA51B;
+	border-radius:0 30px;/*矩形变成边形*/
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px; 
+}
+
+/*日记*/
+#content #riji{
+	width:1000px;
+	background:#fff;
+}
+#riji .rj_content{
+	width:980px;
+	margin-top:10px;
+	padding:0 10px;
+	background:#fff;
+	padding-bottom:10px;
+}
+.rj_content .ri_view{
+	width:980px;
+	height:145px;
+}
+.rj_content .ri_view .ri_LeftImg{
+	width:120px;
+	height:145px; 
+}
+.rj_content .ri_view .ri_LeftImg img{
+	border-radius:60px;
+	margin-top:10px;
+}
+.rj_content .ri_view .ri_RightText{
+	width:780px;
+	height:100px;
+	background:#fff;
+	border:1px solid #E0DFDF;
+	margin:10px 10px 0px 10px;
+	position:relative;
+	border-radius:5px;
+	padding:10px;
+	color:#4F4F4F;
+	text-indent: 2em;
+}
+.ri_RightText p:hover{
+	color: #79CDC7;
+}
+.rj_content .ri_view .ri_RightText img{
+	position:absolute;
+	top:40px;
+	left:-14px;
+	z-index:1;
+}
+
+/*留言*/
+#words{
+	width:1000px;
+	margin:5px auto;
+}
+.wordsXin{
+	color: red;
+	margin-right: 60px;
+}
+#words input{
+	height: 30px;
+	width: 200px;
+	padding-left: 10px;
+	margin: 10px;
+}
+#words input[type="submit"]{
+	margin-left: 50px;
+	height: 50px;
+	width: 100px;
+	background: #506F70;
+	font-size: 20px;
+}
+.wordsText{
+	margin-right: 8px;
+	width: 56px;
+}
+.wordsWen{
+	margin: 5px;
+	height: 100%;
+}
+.comment{
+	text-align:justify;
+	height: 120px;
+	margin-bottom: 10px;
+}
+.comment header{
+	float: left;
+	margin-right: 10px;
+}
+.cWen{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.cWen p{
+	padding-top: 5px;
+}
+/*个人中心页面开始*/
+.homaMain{
+	width: 1000px;
+	height: 100%;
+	background: #FFFFFF;
+}
+.homeTop{
+	height: 130px;
+	width: 1000px;
+}
+.homeTopLeft{
+}
+.homeTopLeft img{
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+}
+.homeTopRight{
+	float: right;
+	padding-top: 20px;
+	padding-right: 50px;
+}
+/*按钮*/
+.homeTopRight1,.homeTopRight2{
+	background: #EC971F;
+	color: #fff;
+	display:inline-block;/*行内块*/
+	width: 67px;
+	height: 26px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 26px;
+}
+.homeTopRight1:hover{
+	background: #9A5F0D;
+}
+.homeTopRight2{
+	background: #38B836;
+}
+.homeTopRight2:hover{
+	background: #1B591A;
+}
+.homeTopButton{
+	border-top: 1px solid #B1B1B1;
+	border-bottom: 1px solid #B1B1B1;
+	height: 45px;
+}
+.homeTopButton a{
+	padding-top: 30px;
+	padding-left: 10px;
+}
+.homeTopButton img{
+	padding-top: 15px;
+	padding-left: 40px;
+	display: inline-block;
+	vertical-align:middle
+}
+.homeContent{
+	height: 100%;
+
+}
+.contentTitle{
+	height: 50px;
+	border-bottom: 1px solid #B1B1B1;
+	line-height: 50px;
+	font-size: 20px;
+	padding-left: 40px;
+}
+.contentTitle p:before{
+	content: url(../images/home_wz.png);
+}
+.content_textLeft{
+	float: right;
+	padding-right: 50px;
+}
+/*个人中心页面介绍*/
+/*个人中心编辑页面*/
+.userTop{
+	padding-left: 25px;
+	padding-top: 30px;
+	height: 63px;
+	border-bottom: 1px solid #B1B1B1;
+}
+.userTop img{
+	float: left;
+}
+.userTop span{
+	font-size: 20px;
+	padding-left: 5px;
+}
+.userContent{
+	border-bottom: 1px solid #B1B1B1;
+}
+.userContent_title h3{
+	padding-top: 30px;
+	padding-left: 50px;
+}
+.userContent_text{
+	padding-top: 10px;
+}
+.userContent_text p{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.userContent_text input{
+	height: 34px;
+	width: 167px;
+
+}
+.userContent_text1{
+	padding-left: 60px;
+	padding-top: 10px;
+}
